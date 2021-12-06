@@ -54,7 +54,7 @@ const a = new Vector([1, 2, 3])
 const b = new Vector([5, 6, 7])
 const c = new Vector([5, 6, 7])
 
-//! console.log(b.equals(c));
+console.log(b.equals(c));
 
 
 /* 
