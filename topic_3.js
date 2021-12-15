@@ -81,7 +81,7 @@ const jack = new Person('Jack', 40);
 
 console.log(john.introduce())
 console.log(jack.introduce()) ===
-   === =
+
    // ** Create a Vector object that supports addition, subtraction, dot products, and norms. So, for example. If you try to add, subtract, or dot two vectors with different lengths, you must throw an error. Also provide: a toString method, so that using the vectors from above, a.toString() === '(1,2,3)' an equals method, to check that two vectors that have the same components are equal.
    // * Task 1
 
@@ -164,5 +164,4 @@ const john = myNew(Person, 'John', 30);
 const jack = new Person('Jack', 40);
 
 console.log(john.introduce())
-console.log(jack.introduce()) >>>
-   >>> > 215931 cde391a817f270b2c89883edc3c13775dd
+console.log(jack.introduce())
