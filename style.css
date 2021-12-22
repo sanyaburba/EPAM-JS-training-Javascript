@@ -1,0 +1,12 @@
+td {
+   border: 1px solid blue;
+   width: 10px;
+   height: 10px;
+}
+td.selected {
+   background: red !important;
+}
+.blue {
+   background: blue;
+   color: white;
+}
