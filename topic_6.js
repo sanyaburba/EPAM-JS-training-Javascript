@@ -1,3 +1,6 @@
+//** Create your custom error and trigger it.
+
+
 let name = prompt('Введите имя как минимум из пяти букв', 'Elena');
 
 let result;
