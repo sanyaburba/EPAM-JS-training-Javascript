@@ -14,7 +14,7 @@ for (row = 0; row < 100; row++) {
       function drag(e) {
          e.dataTransfer.setData('style', tr.style.background);
       }
-      td.onmouseover = selectCell.bind(td);
+      td.onclick = selectCell.bind(td);
       td.addEventListener('drop', dropped.bind(td))
    }
    table.appendChild(tr);
