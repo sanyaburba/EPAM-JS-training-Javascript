@@ -21,29 +21,32 @@ runningAverage(13)
 // ** Write a sum() function which will work properly when invoked using syntax below:
 // * Task 2
 
-// const sum = (...args) => args.reduce((a, v) => a + v, 0);
+ const sum = (...args) => args.reduce((a, v) => a + v, 0);
 
-// function curry(fn) {
-//    const argumentsArray = [];
+ function curry(fn) {
+    const argumentsArray = [];
 
-//    function subCurry(...args) {
-//       argumentsArray.push(...args);
+    function subCurry(...args) {
+       argumentsArray.push(...args);
 
-//       return subCurry;
-//    }
+       return subCurry;
+    }
 
-//    subCurry[Symbol.toPrimitive] = () => {
-//       const result = fn.apply(this, argumentsArray);
-//       argumentsArray.length = 0;
+    subCurry[Symbol.toPrimitive] = () => {
+       const result = fn.apply(this, argumentsArray);
+       argumentsArray.length = 0;
 
-//       return result;
-//    };
+       return result;
+    };
 
-//    return subCurry;
-// }
+    return subCurry;
+ }
 
-// const curriedSum = curry(sum);
-// console.log(Number(curriedSum(1, 5)(2)(3)(56)(443, 657)));
+ const curriedSum = curry(sum);
+ console.log(Number(curriedSum(1, 5)(2)(3)(56)(443, 657)));
+
+
+// ---------------------------------------- OR
 
 
 function sum(a, b, c) {
